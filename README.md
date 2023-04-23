@@ -4,7 +4,7 @@ Progressive Web Apps example
 ## Task 1. Start App and audit PWA with Chrome Lighthouse utility
 
 - In terminal call
- ```
+ ```shell
 npx http-server -p 8080
 ```
 - Open http://localhost:8080 in Chrome browser
@@ -21,9 +21,17 @@ Expected audit results
 ![](info/git_new_repo_3.png)
 
 4. Open terminal. Then add access token to the copied repository link and set as your origin repository
-```aidl
+```shell
 git remote set-url origin https://<ACCESS_TOKEN>@github.com/it-zmina/pwa-factory.git
 ```
+
+5. Deploy to your repository with call in terminal:
+```shell
+git push origin master
+```
+6. Open repository settings and configure it as Github page:
+   ![](info/github.pages.png)
+
 ## Task 3. Generate APK file and install to your VR headset
 
 1. Navigate [https://www.pwabuilder.com/](https://www.pwabuilder.com/) and insert link to your PWA web page
